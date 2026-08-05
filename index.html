@@ -11,10 +11,12 @@
 <style>
 
 :root{
---cream:#F6F2E8;
 --navy:#14264A;
 --gold:#B7964F;
---white:#ffffff;
+--light-gold:#D8C49A;
+--cream:#F6F2E8;
+--off-white:#FCFAF5;
+--dark-gray:#3C3C3C;
 }
 
 *{
@@ -55,9 +57,11 @@ font-family:"Cormorant Garamond",serif;
 font-size:56px;
 text-align:center;
 line-height:1;
+color:var(--navy);
 }
 
 .lastname{
+font-style:italic;
 color:var(--gold);
 }
 
@@ -67,6 +71,7 @@ letter-spacing:4px;
 font-size:15px;
 margin-top:8px;
 font-weight:600;
+color:var(--navy);
 }
 
 .tagline{
@@ -74,12 +79,13 @@ text-align:center;
 margin-top:30px;
 font-size:18px;
 line-height:1.8;
+color:var(--navy);
 }
 
 .save{
 display:block;
-background:var(--gold);
-color:white;
+background:var(--light-gold);
+color:var(--navy);
 text-decoration:none;
 text-align:center;
 padding:18px;
@@ -88,16 +94,19 @@ margin:40px 0 18px;
 font-size:20px;
 font-weight:600;
 transition:.25s;
+border:2px solid var(--gold);
 }
 
 .save:hover{
 transform:translateY(-2px);
+background:var(--gold);
+color:white;
 }
 
 .button{
 display:block;
 text-decoration:none;
-background:white;
+background:var(--off-white);
 color:var(--navy);
 padding:18px;
 border-radius:14px;
@@ -105,24 +114,33 @@ margin:14px 0;
 text-align:center;
 font-weight:600;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
+border:2px solid var(--light-gold);
+transition:.25s;
+}
+
+.button:hover{
+background:var(--light-gold);
 }
 
 .section{
-background:white;
+background:var(--off-white);
 padding:28px;
 margin-top:35px;
 border-radius:18px;
 box-shadow:0 8px 20px rgba(0,0,0,.08);
+border-top:4px solid var(--gold);
 }
 
 .section h2{
 font-family:"Cormorant Garamond",serif;
 font-size:34px;
 margin-bottom:15px;
+color:var(--navy);
 }
 
 .about{
 line-height:1.8;
+color:var(--navy);
 }
 
 .social{
@@ -137,13 +155,28 @@ text-decoration:none;
 font-size:18px;
 color:var(--navy);
 font-weight:600;
+transition:.25s;
+padding:10px 15px;
+border-radius:8px;
+border:2px solid var(--light-gold);
+}
+
+.social a:hover{
+background:var(--light-gold);
 }
 
 .footer{
 text-align:center;
 margin-top:40px;
 font-size:14px;
-color:#666;
+color:var(--dark-gray);
+}
+
+.divider{
+height:3px;
+background:var(--gold);
+margin:20px 0;
+border-radius:2px;
 }
 
 </style>
